@@ -8,8 +8,9 @@ fun main() {
     println(result)
 
     //question3
-    var myvowls = vowChar(arrayOf('a','e','i','o','u'))
+    var myvowls = vowChar(arrayOf('a','b','e','c','i','t','o','z','u'))
     println(myvowls)
+    
 }
 //1.Write a function that takes in an array of integers and returns the product of
 //all the elements(3pts)
@@ -26,8 +27,8 @@ return product
 fun findSum(numb: Array<Any>): Double{
     var sum = 0.0
     numb.forEach { mixed ->
-        if (mixed is Double) {
-            sum += mixed
+         if (mixed is Double || mixed is Float) {
+            sum +=mixed.toString().toDouble()
         }
         }
     return sum
